@@ -1,0 +1,7 @@
+{
+  "name": "prototipo-tam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
