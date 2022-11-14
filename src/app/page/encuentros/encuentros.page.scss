@@ -1,0 +1,28 @@
+ion-grid{
+    align-items: center;
+    text-align: center;
+}
+
+ion-row{
+    ion-column{
+        background-color: #363636;
+        border: solid 1px rgb(24, 24, 24);
+        color: #fff;
+        text-align: center;
+    }
+}
+
+ion-row.header {
+    ion-col{
+        background-color: #727070;
+        border: solid 1px rgb(24, 24, 24);
+        color: #fff;
+        text-align: center;
+    }
+  }
+
+  ion-toolbar{
+    --background: rgb(150, 15, 15);
+    border-radius: 0px 0px 20px 20px;
+}
+
