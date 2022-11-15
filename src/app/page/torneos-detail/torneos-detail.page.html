@@ -37,33 +37,38 @@
 </ion-menu>
 <div class="ion-page" id="main-content"></div>
 
-<ion-header>
-  <ion-toolbar>
-    <ion-segment value="all">
-      <ion-segment-button value="all">
-        Todos
-      </ion-segment-button>
-      <ion-segment-button value="past">
-        Terminados
-      </ion-segment-button>
-      <ion-segment-button value="future">
-        Programados
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-  <ion-item-divider>
-    <ion-searchbar search-icon="basketball" placeholder="Deporte" color="light"></ion-searchbar>
-  </ion-item-divider>
-</ion-header>
-
 <ion-content>
-   
-  <ion-item>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>Nombre del Torneo</ion-card-title>
+      <ion-card-subtitle>Deporte</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <table style="display: flex; justify-content: space-evenly;">
+        <tr>
+          <th>
+            <ion-button style="margin-right: 20px; width: 200px;">
+              <ion-icon slot="start" name="notifications"></ion-icon>
+              Notificar
+            </ion-button>
+          </th>
+          <th>
+            <ion-label>
+              <p>12 de Agosto</p>
+              <p>28 de Agosto</p>
+            </ion-label>
+          </th>
+        </tr>
+      </table>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item-divider>
     <ion-label>
-      <h1>Terminados</h1>
       <p>24 de Agosto</p>
     </ion-label>
-  </ion-item>
+  </ion-item-divider>
 
   <ion-card [routerLink]="['/encuentros-detail']">
     <ion-card-content>
@@ -107,11 +112,11 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-item>
+  <ion-item-divider>
     <ion-label>
-      <h1>Hoy</h1>
+      <p>Hoy</p>
     </ion-label>
-  </ion-item>
+  </ion-item-divider>
 
   <ion-card>
     <ion-card-content>
@@ -140,105 +145,11 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-item>
+  <ion-item-divider>
     <ion-label>
-      <h1>Programadas</h1>
       <p>26 de Agosto</p>
     </ion-label>
-  </ion-item>
-
-  <ion-card>
-    <ion-card-content>
-      <table style="display: flex; justify-content: space-evenly;">
-        <tr>
-          <th>
-            <ion-label>
-              <h1>18:00</h1>
-              <p>TBD</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 1</ion-button>
-          </th>
-          <th>
-            <ion-label>
-              <h2>VS</h2>
-              <p>TORNEO</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 2</ion-button>
-          </th>
-        </tr>
-      </table>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-content>
-      <table style="display: flex; justify-content: space-evenly;">
-        <tr>
-          <th>
-            <ion-label>
-              <h1>18:00</h1>
-              <p>TBD</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 1</ion-button>
-          </th>
-          <th>
-            <ion-label>
-              <h2>VS</h2>
-              <p>TORNEO</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 2</ion-button>
-          </th>
-        </tr>
-      </table>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-item>
-    <ion-label>
-      <p>27 de Agosto</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-card>
-    <ion-card-content>
-      <table style="display: flex; justify-content: space-evenly;">
-        <tr>
-          <th>
-            <ion-label>
-              <h1>18:00</h1>
-              <p>TBD</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 1</ion-button>
-          </th>
-          <th>
-            <ion-label>
-              <h2>VS</h2>
-              <p>TORNEO</p>
-            </ion-label>
-          </th>
-          <th>
-            <ion-button>Equipo 2</ion-button>
-          </th>
-        </tr>
-      </table>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-item>
-    <ion-label>
-      <p>28 de Agosto</p>
-    </ion-label>
-  </ion-item>
+  </ion-item-divider>
 
   <ion-card>
     <ion-card-content>

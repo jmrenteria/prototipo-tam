@@ -37,53 +37,62 @@
 </ion-menu>
 <div class="ion-page" id="main-content"></div>
 
-<ion-header>
-  <ion-toolbar>
-    <ion-segment value="all">
-      <ion-segment-button value="all">
-        Todos
-      </ion-segment-button>
-      <ion-segment-button value="past">
-        Terminados
-      </ion-segment-button>
-      <ion-segment-button value="future">
-        Programados
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-  <ion-item-divider>
-    <ion-searchbar search-icon="basketball" placeholder="Deporte" color="light"></ion-searchbar>
-  </ion-item-divider>
-</ion-header>
-
 <ion-content>
-   
   <ion-item>
     <ion-label>
-      <h1>Terminados</h1>
+      <h1>24 de Agosto</h1>
+      <p>Voleibol</p>
     </ion-label>
   </ion-item>
 
-  <ion-card [routerLink]="['/torneos-detail']">
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-    <ion-card-header>
-      <ion-card-title>Nombre del Torneo</ion-card-title>
-      <ion-card-subtitle>Deporte</ion-card-subtitle>
-    </ion-card-header>
+  <ion-card>
     <ion-card-content>
       <table style="display: flex; justify-content: space-evenly;">
         <tr>
           <th>
-            <ion-button style="margin-right: 20px; width: 200px;">
-              <ion-icon slot="start" name="notifications"></ion-icon>
-              Notificar
-            </ion-button>
+            <ion-button>Equipo 1</ion-button>
           </th>
           <th>
             <ion-label>
-              <p>12 de Agosto</p>
-              <p>28 de Agosto</p>
+              <h1>2 - 1</h1>
+              <p>TORNEO</p>
             </ion-label>
+          </th>
+          <th>
+            <ion-button>Equipo 2</ion-button>
+          </th>
+        </tr>
+      </table>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; row-gap: 5px; justify-items: center;">
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+        <div id="jugador">Nombre Apellido</div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <table style="display: flex; justify-content: space-evenly;">
+        <tr>
+          <th>
+            <ion-button>Equipo 1</ion-button>
+          </th>
+          <th>
+            <ion-label>
+              <h1>10 - 25</h1>
+              <p>TORNEO</p>
+            </ion-label>
+          </th>
+          <th>
+            <ion-button>Equipo 2</ion-button>
           </th>
         </tr>
       </table>
@@ -91,57 +100,41 @@
   </ion-card>
 
   <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-    <ion-card-header>
-      <ion-card-title>Nombre del Torneo</ion-card-title>
-      <ion-card-subtitle>Deporte</ion-card-subtitle>
-    </ion-card-header>
     <ion-card-content>
       <table style="display: flex; justify-content: space-evenly;">
         <tr>
           <th>
-            <ion-button style="margin-right: 20px; width: 200px;">
-              <ion-icon slot="start" name="notifications"></ion-icon>
-              Notificar
-            </ion-button>
+            <ion-button>Equipo 1</ion-button>
           </th>
           <th>
             <ion-label>
-              <p>12 de Agosto</p>
-              <p>28 de Agosto</p>
+              <h1>25 - 14</h1>
+              <p>TORNEO</p>
             </ion-label>
+          </th>
+          <th>
+            <ion-button>Equipo 2</ion-button>
           </th>
         </tr>
       </table>
     </ion-card-content>
   </ion-card>
 
-  <ion-item>
-    <ion-label>
-      <h1>Programados</h1>
-    </ion-label>
-  </ion-item>
-
   <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-    <ion-card-header>
-      <ion-card-title>Nombre del Torneo</ion-card-title>
-      <ion-card-subtitle>Deporte</ion-card-subtitle>
-    </ion-card-header>
     <ion-card-content>
       <table style="display: flex; justify-content: space-evenly;">
         <tr>
           <th>
-            <ion-button style="margin-right: 20px; width: 200px;">
-              <ion-icon slot="start" name="notifications"></ion-icon>
-              Notificar
-            </ion-button>
+            <ion-button>Equipo 1</ion-button>
           </th>
           <th>
             <ion-label>
-              <p>12 de Agosto</p>
-              <p>28 de Agosto</p>
+              <h1>25 - 03</h1>
+              <p>TORNEO</p>
             </ion-label>
+          </th>
+          <th>
+            <ion-button>Equipo 2</ion-button>
           </th>
         </tr>
       </table>

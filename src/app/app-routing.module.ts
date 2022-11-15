@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./page/inicio/inicio.module').then( m => m.InicioPageModule)
-  },  {
+  },
+  {
     path: 'torneos',
     loadChildren: () => import('./page/torneos/torneos.module').then( m => m.TorneosPageModule)
   },
@@ -22,7 +23,13 @@ const routes: Routes = [
     path: 'encuentros',
     loadChildren: () => import('./page/encuentros/encuentros.module').then( m => m.EncuentrosPageModule)
   },
-
+  {
+    path: 'encuentros-detail',
+    loadChildren: () => import('./page/encuentros-detail/encuentros-detail.module').then( m => m.EncuentrosDetailPageModule)
+  },  {
+    path: 'torneos-detail',
+    loadChildren: () => import('./page/torneos-detail/torneos-detail.module').then( m => m.TorneosDetailPageModule)
+  }
 
 ];
 
